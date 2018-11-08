@@ -1,0 +1,9 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/content/index"
+    ],
+    "window": {
+        "defaultTitle": "生命周期检测器"
+    }
+}

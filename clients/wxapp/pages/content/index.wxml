@@ -1,0 +1,2 @@
+<view>Content</view>
+<navigator class="button" url="/pages/index/index">Index</navigator>

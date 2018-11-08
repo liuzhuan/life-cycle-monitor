@@ -1,0 +1,3 @@
+<view>Index</view>
+<navigator class="button" url="/pages/content/index">content</navigator>
+<navigator class="button" url="/pages/content/index" open-type="redirect">content - redirect</navigator>
