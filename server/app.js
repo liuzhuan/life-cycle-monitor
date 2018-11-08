@@ -1,4 +1,11 @@
+#!/usr/bin/env node
+
 const http = require("http");
+const getLocalIP = require("./getLocalIP.js");
+const replaceServerIP = require("./replaceServerIP.js");
+
+const ip = getLocalIP();
+replaceServerIP(ip);
 
 const server = http.createServer((req, res) => {
     const url = req.url.slice(1);
@@ -26,4 +33,4 @@ server.on("error", e => {
     console.log("Server encoutered error, e:", e);
 })
 
-console.log("monitor running on localhost:3000");
+console.log(`monitor running on http://${ip}:3000`);
