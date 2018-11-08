@@ -6,7 +6,7 @@
 
 ## 用法
 
-首先，启动 `server/app.js` 服务器
+首先，保证手机和电脑位于同一个局域网，然后启动 `server/app.js` 服务器
 
 ```sh
 $ ./server/app.js
