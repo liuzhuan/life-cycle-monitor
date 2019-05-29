@@ -16,6 +16,15 @@ const server = http.createServer((req, res) => {
     if (/App.onHide/.test(url)) {
         console.log("");
     }
+
+    let result = ''
+    req.on('data', data => {
+        result += data;
+    })
+
+    req.on('end', () => {
+        console.log('DATA:' + result);
+    })
     
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end();
